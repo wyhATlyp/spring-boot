@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wyh.springbootmybatis.mapper.UserMapper">
+
+	<resultMap id="baseResult" type="com.wyh.springbootmybatis.entity.UserEntity">
+		<result property="id" column="F_ID" />
+		<result property="name" column="F_NAME" />
+		<result property="age" column="F_AGE" />
+	</resultMap>
+	
+	<select id="selectById" resultMap="baseResult" parameterType="long">
+		select * from t_user where f_id=#{id}
+	</select>
+
+</mapper>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wyh.springbootvalidate.mapper.UserMapper">
+
+	<insert id="insert" parameterType="com.wyh.springbootvalidate.entity.UserEntity">
+		insert into T_USER(
+			F_NAME,
+			F_AGE
+		) values(
+			#{name},
+			#{age}
+		)
+	</insert>
+
+</mapper>

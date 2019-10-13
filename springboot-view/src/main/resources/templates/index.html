@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title></title>
+</head>
+<body>
+	TH-TEXT:<span th:text="${msg}"></span><hr />
+	TH_VALUE:<input type="text" th:value="${msg}" /><hr />
+	strings:<span th:text="${#strings.isEmpty(msg)}"></span><hr />
+	dates:<span th:text="${#dates.format(date)}"></span><hr />
+	TH_IF:
+	<span th:if="!${#strings.isEmpty(msg)}">
+		msg不为空
+	</span>
+	TH_SWITCH:
+	<span th:switch="${id}">
+		<span th:case="1">id为1</span>
+		<span th:case="2">id为2</span>
+	</span><hr />
+	TH_EACH遍历list:<br />
+	<span th:each="l,s : ${list}">
+		值:<span th:text="${l}"></span>
+		索引:<span th:text="${s.index}"></span>
+		<br />
+	</span><hr />
+	TH_EACH遍历map:<br />
+	<span th:each="m : ${map}">
+		<span th:each="entry : ${m}" th:text="${entry.key + '_' + entry.value}"></span><br />
+	</span><hr />
+	req:<span th:text="${#httpServletRequest.getAttribute('req')}"></span><hr />
+	session:<span th:text="${session.sess}"></span><hr />
+	app:<span th:text="${application.app}"></span><hr />
+</body>
+</html>

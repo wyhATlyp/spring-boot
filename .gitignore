@@ -1,0 +1,10 @@
+/build/
+/target/
+.classpath
+.project
+/.settings/
+/dist/
+**/target/
+**/.settings/
+**/file/
+**/build/

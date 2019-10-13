@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>添加用户</title>
+</head>
+<body>
+	<form th:action="@{/user/save}" method="post">
+		姓名:<input name="name" th:value="${userEntity.name}" /><font color="red" th:errors="${userEntity.name}"></font><hr />
+		年龄:<input name="age" th:value="${userEntity.age}" /><font color="red" th:errors="${userEntity.age}"></font><hr />
+		<input type="submit" value="提交"/><hr />
+	</form>
+	结果:<span th:text="${msg}"></span>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<title>URL表达式</title>
+</head>
+<body>
+	<a th:href="@{http://www.baidu.com}">绝对路径-百度</a><hr />
+	<a th:href="@{/thymeleaf/url/relative(id=1)}">相对路径-相当于访问Controller</a><hr />
+	<a th:href="@{~/root.html}">相对路径-相当于访问src/main/resources/static中的静态资源</a><hr />
+</body>
+</html>
