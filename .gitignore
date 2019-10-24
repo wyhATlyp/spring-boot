@@ -8,3 +8,4 @@
 **/.settings/
 **/file/
 **/build/
+.metadata/**
