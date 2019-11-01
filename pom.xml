@@ -24,6 +24,7 @@
 		<module>springboot-jpa</module>
 		<module>springboot-cache</module>
 		<module>springboot-schedule</module>
+		<module>springboot-rabbitmq</module>
 	</modules>
 	
 	<!-- 修改jar包版本 -->
