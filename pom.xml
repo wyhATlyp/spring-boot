@@ -25,6 +25,7 @@
 		<module>springboot-cache</module>
 		<module>springboot-schedule</module>
 		<module>springboot-rabbitmq</module>
+		<module>springboot-websocket</module>
 	</modules>
 	
 	<!-- 修改jar包版本 -->

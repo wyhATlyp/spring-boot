@@ -1,0 +1,6 @@
+spring:
+  webservices:
+    wsdl-locations: classpath:/wsdl
+    
+server:
+  port: 8081
