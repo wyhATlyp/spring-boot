@@ -1,6 +1,10 @@
 spring:
   webservices:
     wsdl-locations: classpath:/wsdl
+  security:
+    user:
+      name: admin
+      password: 111111
     
 server:
-  port: 8081
+  port: 8080
