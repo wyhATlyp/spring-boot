@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.stereotype.Controller;
@@ -57,9 +58,8 @@ public class ChatController {
 	
 	@MessageMapping("/chat")
 //	@SendToUser("/topic/user1")
-	public void hello(ReqBody body) {
+	public void hello(@Header Integer gId, ReqBody body) {
 		System.out.println("收到消息:" + body);
-		Integer gId = body.getgId();
 		smt.convertAndSendToUser("" + gId, "/topic", "{'code':'" + body.getMessage() + "'}");
 		smt.convertAndSendToUser("" + gId, "/topic2", body.getMessage());
 	}
