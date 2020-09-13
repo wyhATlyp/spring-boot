@@ -28,6 +28,7 @@
 		<module>springboot-websocket</module>
 		<module>springboot-activemq</module>
 		<module>springboot-source</module>
+		<module>spring-source</module>
 	</modules>
 	
 	<!-- 修改jar包版本 -->

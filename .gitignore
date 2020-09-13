@@ -9,3 +9,5 @@
 **/file/
 **/build/
 .metadata/**
+.idea/**
+*.iml
