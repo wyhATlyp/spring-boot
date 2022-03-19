@@ -29,6 +29,7 @@
 		<module>springboot-activemq</module>
 		<module>springboot-source</module>
 		<module>spring-source</module>
+		<module>springboot-elasticjob</module>
 	</modules>
 	
 	<!-- 修改jar包版本 -->

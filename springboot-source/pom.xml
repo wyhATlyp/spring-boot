@@ -6,7 +6,6 @@
 	<artifactId>springboot-source</artifactId>
 	<packaging>jar</packaging>
 
-	
 	<parent>
 		<groupId>com.wyh</groupId>
 		<artifactId>spring-boot</artifactId>
